@@ -6,12 +6,86 @@
 
 :root {
   font-size: 62.5%;
+  --background-color: #573824;
+  --surface-color: #f0e8c2;
+
+  --font-family: "Alice", serif;
+  --text-color-primary: #291b1a;
+  --text-color-secondary: #573a37;
+  --text-color-on-bg: #f0e8c2;
+
+  --heading1: normal 4rem/1.4 var(--font-family);
+  --heading2: normal 2.4rem/1.5 var(--font-family);
+  --paragraph: normal 1.6rem/1.4 var(--font-family);
 }
 
 body {
+  background-image: url("./assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-size: 1.6rem;
+  padding: 4.8rem 0;
+}
+
+h1 {
+  font: var(--heading1);
+}
+
+h2 {
+  font: var(--heading2);
+}
+
+h1,
+h2 {
+  color: var(--text-color-primary);
+  margin-bottom: 4px;
+}
+
+p,
+ul {
+  font: var(--paragraph);
+  color: var(--text-color-secondary);
+}
+
+#page {
+  background-color: var(--surface-color);
+  width: 80rem;
+  padding: 2.4rem;
+  margin: auto;
+  border-radius: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  padding: 2.4rem;
 }
 
 img {
+  width: 100%;
   border-radius: 1.6rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  margin-top: 2.8rem;
+
+  font: var(--paragraph);
+  color: var(--text-color-on-bg);
+}
+
+footer img {
+  width: 1.6rem;
+  height: 1.6rem;
 }
