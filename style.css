@@ -73,6 +73,10 @@ img {
   border-radius: 1.6rem;
 }
 
+ul li {
+  margin-left: 3rem;
+}
+
 footer {
   display: flex;
   align-items: center;
