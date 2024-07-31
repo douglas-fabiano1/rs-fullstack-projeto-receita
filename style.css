@@ -73,8 +73,8 @@ img {
   border-radius: 1.6rem;
 }
 
-ul li {
-  margin-left: 3rem;
+ul {
+  padding-left: 2.5rem;
 }
 
 footer {
